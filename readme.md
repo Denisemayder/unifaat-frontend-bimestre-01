@@ -71,6 +71,21 @@ Todos os containers estão conectados à rede Docker personalizada:
 app_network
 ```
 
+## Alterações locais - Aula 01
+
+- Substituí a imagem `public/img/squirtle.png` por uma imagem alternativa (Yusuke) para fins de demonstração do exercício.
+- Criei um backup do arquivo original em `public/img/squirtle.png.bak`.
+
+Como rodar localmente (exemplo):
+
+```bash
+cp .env.example .env
+docker-compose up --build
+```
+
+Observação: o arquivo `.env` não deve ser comitado no repositório remoto — mantenha o `.env.example` como template.
+
+
 ### 🌍 Portas Expostas Externamente
 
 | Serviço | Porta Interna | Porta Externa | Acesso Externo        |
